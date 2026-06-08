@@ -8,6 +8,12 @@
   font-family: "IBM Plex Sans", sans-serif;
   overflow: hidden;
 }
+.logo {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
+}
 
 /* 🔥 BACKGROUND DEPTH */
 .bg {
@@ -16,7 +22,7 @@
   background:
     radial-gradient(circle at 20% 20%, rgba(183,165,138,0.08), transparent 40%),
     radial-gradient(circle at 80% 30%, rgba(20,38,61,0.5), transparent 50%),
-    linear-gradient(180deg, #0b1622, #14263d);
+    linear-gradient(180deg, #707071, #010101);
 }
 
 /* 🔥 NOISE (subtle pattern) */
@@ -41,14 +47,7 @@
   animation: fadeUp 0.6s ease;
 }
 
-/* LOGO */
-.logo {
-  width: clamp(90px, 20vw, 120px);
-  margin-bottom: 16px;
 
-  /* 🔥 التحكم في لون SVG */
-  filter: brightness(0) invert(1);
-}
 
 /* TITLE */
 .title {

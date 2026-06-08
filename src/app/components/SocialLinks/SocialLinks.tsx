@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./SocialLinks.module.css";
 import {
   FaFacebookF,
@@ -9,24 +7,29 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaSnapchat,
+  FaPhone,
 } from "react-icons/fa";
 import Image from "next/image";
 
 export default function SocialLinks() {
   const links = [
-    { name: "LinkedIn", icon: <FaLinkedinIn />, url: "#" },
-    { name: "Twitter (X)", icon: <FaTwitter />, url: "https://x.com/rowaelqema" },
+    { name: "LinkedIn", 
+      icon: <FaLinkedinIn />, 
+      url: "https://www.linkedin.com/company/egyptian-engineering-for-integrated-system/" },
     {
       name: "Facebook",
       icon: <FaFacebookF />,
-      url: "https://www.facebook.com/people/RowadElqema/61570868981119/",
+      url: "https://www.facebook.com/61563478710140/",
     },
-    { name: "Instagram", icon: <FaInstagram />, url: "#" },
-    { name: "Snapchat", icon: <FaSnapchat />, url: "#" },
-    { name: "Contact Email", icon: <FaEnvelope />, url: "#" },
-    { name: "Our Location", icon: <FaMapMarkerAlt />, url: "#" },
+    { name: "Instagram", 
+      icon: <FaInstagram />, 
+      url: "https://www.instagram.com/eeis.2026?igsh=MXJscWZkZzEyYzUwOA==" },
+    { name: "Contact Email", 
+      icon: <FaEnvelope />, 
+      url: "mailto:projects@ee-is.com" },
+    { name: "01018425509", icon: <FaPhone />, url: "tel:+01018425509" },
+    { name: "01225488825", icon: <FaPhone />, url: "tel:+01225488825" },
   ];
-
   return (
     <main className={styles.page}>
       <div className={styles.bg}></div>
@@ -34,16 +37,16 @@ export default function SocialLinks() {
 
       <div className={styles.container}>
         <div className={styles.header}>
-          <Image
-            src="/logo.svg"
-            alt="logo"
-            width={120}
-            height={120}
-            className={styles.logo}
+         <Image
+            src="/eeis-logo.png"
+            alt="EEIS Logo"
+            width={600}
+            height={200}
             priority
+            className={styles.logo}
           />
 
-          <h1 className={styles.title}>Rowad Al Qimma</h1>
+          <h1 className={styles.title}>EEIS</h1>
 
         </div>
 
